@@ -1,0 +1,1475 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mallikarjun Galatagi - Professional Portfolio. Java Full Stack Developer specializing in Java, JSP, Servlets, JDBC, MySQL, and modern frontend technologies."
+    />
+    <meta
+      name="keywords"
+      content="Mallikarjun Galatagi, Java Full Stack Developer, Java Developer, JSP, Servlets, JDBC, Software Engineer Portfolio"
+    />
+    <meta name="author" content="Mallikarjun Galatagi" />
+    <title>Mallikarjun Galatagi | Java Full Stack Developer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/profile.png" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts: Inter, Poppins, Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;550;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400;550;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- Devicon (for tech stack icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/devicon@2.16.0/devicon.min.css"
+    />
+
+    <!-- AOS (Animate On Scroll) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Mouse Glow Effect (Slate Dark Theme Only) -->
+    <div class="mouse-glow" id="mouse-glow"></div>
+
+    <!-- Header / Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="main-nav">
+      <div class="container navbar-container">
+        <a class="navbar-brand" href="#home" id="nav-brand">
+          Mallikarjun Galatagi
+        </a>
+
+        <div class="d-flex align-items-center order-lg-last gap-3">
+          <!-- Theme Switcher Button -->
+          <button
+            class="theme-toggle-btn"
+            id="theme-toggle"
+            aria-label="Toggle Theme"
+          >
+            <span class="theme-btn-icon"
+              ><i class="fa-solid fa-newspaper" id="theme-icon"></i
+            ></span>
+            <span class="theme-btn-text" id="theme-text">Broadsheet</span>
+          </button>
+
+          <!-- Hamburger Toggle -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggler-icon"></span>
+            <span class="toggler-icon"></span>
+            <span class="toggler-icon"></span>
+          </button>
+        </div>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-2">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header
+      id="home"
+      class="hero-section d-flex align-items-center text-center"
+    >
+      <div class="container hero-container position-relative">
+        <div class="row justify-content-center min-vh-100 py-5">
+          <div
+            class="col-lg-10 col-xl-8 d-flex flex-column align-items-center justify-content-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <!-- Circular Profile Image at the top -->
+            <div class="hero-profile-wrapper mb-4">
+              <div class="hero-profile-container">
+                <img
+                  src="assets/images/profile.jpg"
+                  alt="Mallikarjun Galatagi"
+                  class="hero-profile-img"
+                />
+              </div>
+            </div>
+
+            <span class="hero-greeting d-block mb-2">Hello, I'm</span>
+            <!-- Name at the top -->
+            <h1 class="hero-name mb-2">Mallikarjun Galatagi</h1>
+            <h2 class="hero-title mb-3">Java Full Stack Developer</h2>
+
+            <!-- Typing Animation -->
+            <div class="typing-container mb-4">
+              <span class="static-txt">I am a </span>
+              <span id="typed-text" class="typed-txt"></span>
+            </div>
+
+            <p class="hero-summary mx-auto mb-5">
+              Java Full Stack Developer with hands-on experience building
+              full-stack web applications using Java, JSP, Servlets, JDBC, HTML,
+              CSS, JavaScript, and MySQL. Passionate about writing clean code,
+              solving complex database problems, and implementing robust OOP
+              designs.
+            </p>
+
+            <div
+              class="hero-buttons d-flex justify-content-center gap-3 flex-wrap"
+            >
+              <a
+                href="assets/resume/resume.pdf"
+                class="btn-primary-action"
+                download="Mallikarjun_Galatagi_Resume.pdf"
+                id="download-resume-btn"
+              >
+                Download Resume <i class="fa-solid fa-arrow-down ms-2"></i>
+              </a>
+              <a
+                href="#contact"
+                class="btn-secondary-action"
+                id="contact-me-btn"
+              >
+                Contact Me
+              </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="hero-socials mt-5 gap-3">
+              <a
+                href="https://github.com/MallikarjunGalatagi"
+                target="_blank"
+                class="social-icon-link"
+                aria-label="GitHub"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mallikarjun-galatagi"
+                target="_blank"
+                class="social-icon-link"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="mailto:mallikarjungalatagi@gmail.com?subject=Job%20Inquiry%20-%20Java%20Full%20Stack%20Developer"
+                class="social-icon-link"
+                aria-label="Email"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <h2 class="section-title">About Me</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="about-image-card">
+              <img
+                src="assets/images/about_illustration_portrait.png"
+                alt="Mallikarjun Workspace Illustration"
+                class="about-img img-fluid"
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content-wrapper">
+              <h3 class="about-subtitle mb-4">Aspiring Software Developer</h3>
+              <p class="about-text">
+                I am a freshly trained
+                <strong>Java Full Stack Developer</strong> with a solid academic
+                foundation in Artificial Intelligence and Data Science. Having
+                completed an intensive hands-on internship at TAP Academy, I
+                have designed and deployed multiple end-to-end full-stack web
+                applications, demonstrating competence in database management,
+                role-based security, and responsive styling.
+              </p>
+
+              <!-- Internship Block -->
+              <div class="internship-card p-4 my-4">
+                <h4 class="internship-title mb-2">TAP Academy Internship</h4>
+                <p class="internship-meta text-muted mb-3">
+                  <i class="fa-solid fa-calendar-days me-2"></i>Full Stack
+                  Development Intern
+                </p>
+                <p class="internship-desc mb-0">
+                  Gained deep technical expertise building dynamic enterprise
+                  web applications using Java, JSP, Servlets, and JDBC.
+                  Developed modular CRUD features, session validation systems,
+                  database pooling integrations, and responsive client layouts
+                  using HTML/CSS/JS. Employed Eclipse, Tomcat, and Git for
+                  version control and environment deployment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <h2 class="section-title">My Technical Skills</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Category 1: Languages & Backend -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="skills-card h-100 p-4">
+              <div class="skills-card-header mb-4">
+                <div class="skill-icon-wrapper">
+                  <i class="fa-solid fa-gears"></i>
+                </div>
+                <h3 class="skill-category-title">Languages & Backend</h3>
+              </div>
+              <div class="skill-list">
+                <div class="skill-item-row">
+                  <i class="devicon-java-plain colored skill-tech-icon"></i>
+                  <span class="skill-name">Java (Core & OOP)</span>
+                </div>
+                <div class="skill-item-row">
+                  <i
+                    class="devicon-javascript-plain colored skill-tech-icon"
+                  ></i>
+                  <span class="skill-name">JavaScript (ES6+)</span>
+                </div>
+                <div class="skill-item-row">
+                  <i
+                    class="fa-solid fa-cubes skill-tech-icon"
+                    style="color: #ff5555"
+                  ></i>
+                  <span class="skill-name">JSP & Servlets</span>
+                </div>
+                <div class="skill-item-row">
+                  <i
+                    class="fa-solid fa-plug skill-tech-icon"
+                    style="color: #00b4d8"
+                  ></i>
+                  <span class="skill-name">JDBC Connectivity</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Frontend & Styling -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="skills-card h-100 p-4">
+              <div class="skills-card-header mb-4">
+                <div class="skill-icon-wrapper">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3 class="skill-category-title">Frontend Technologies</h3>
+              </div>
+              <div class="skill-list">
+                <div class="skill-item-row">
+                  <i class="devicon-html5-plain colored skill-tech-icon"></i>
+                  <span class="skill-name">HTML5 (Semantic)</span>
+                </div>
+                <div class="skill-item-row">
+                  <i class="devicon-css3-plain colored skill-tech-icon"></i>
+                  <span class="skill-name">CSS3 & Layouts</span>
+                </div>
+                <div class="skill-item-row">
+                  <i
+                    class="devicon-bootstrap-plain colored skill-tech-icon"
+                  ></i>
+                  <span class="skill-name">Bootstrap 5</span>
+                </div>
+                <div class="skill-item-row">
+                  <i
+                    class="fa-solid fa-wand-magic-sparkles skill-tech-icon"
+                    style="color: #ec4899"
+                  ></i>
+                  <span class="skill-name">Responsive Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Databases & Tools -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="skills-card h-100 p-4">
+              <div class="skills-card-header mb-4">
+                <div class="skill-icon-wrapper">
+                  <i class="fa-solid fa-toolbox"></i>
+                </div>
+                <h3 class="skill-category-title">Databases & Tools</h3>
+              </div>
+              <div class="skill-list">
+                <div class="skill-item-row">
+                  <i class="devicon-mysql-plain colored skill-tech-icon"></i>
+                  <span class="skill-name">MySQL & SQL Queries</span>
+                </div>
+                <div class="skill-item-row">
+                  <i
+                    class="devicon-github-original skill-tech-icon"
+                    style="color: #6366f1"
+                  ></i>
+                  <span class="skill-name">GitHub Collaboration</span>
+                </div>
+                <div class="skill-item-row">
+                  <i class="devicon-vscode-plain colored skill-tech-icon"></i>
+                  <span class="skill-name">VS Code / Eclipse</span>
+                </div>
+                <div class="skill-item-row">
+                  <i
+                    class="fa-solid fa-server skill-tech-icon"
+                    style="color: #f28f1d"
+                  ></i>
+                  <span class="skill-name">Apache Tomcat / Maven</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Core Concepts -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="skills-card h-100 p-4">
+              <div class="skills-card-header mb-4">
+                <div class="skill-icon-wrapper">
+                  <i class="fa-solid fa-brain"></i>
+                </div>
+                <h3 class="skill-category-title">Core Concepts</h3>
+              </div>
+              <div class="skill-list">
+                <div class="skill-item-row">
+                  <i
+                    class="fa-solid fa-database skill-tech-icon"
+                    style="color: #0ea5e9"
+                  ></i>
+                  <span class="skill-name">CRUD Operations</span>
+                </div>
+                <div class="skill-item-row">
+                  <i
+                    class="fa-solid fa-layer-group skill-tech-icon"
+                    style="color: #a855f7"
+                  ></i>
+                  <span class="skill-name">MVC Architecture</span>
+                </div>
+                <div class="skill-item-row">
+                  <i
+                    class="fa-solid fa-cube skill-tech-icon"
+                    style="color: #f97316"
+                  ></i>
+                  <span class="skill-name"
+                    >Object-Oriented Programming (OOP)</span
+                  >
+                </div>
+                <div class="skill-item-row">
+                  <i
+                    class="fa-solid fa-network-wired skill-tech-icon"
+                    style="color: #10b981"
+                  ></i>
+                  <span class="skill-name"
+                    >Data Structures & Algorithms (DSA)</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 5: Professional Skills -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="skills-card h-100 p-4">
+              <div class="skills-card-header mb-4">
+                <div class="skill-icon-wrapper">
+                  <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <h3 class="skill-category-title">Professional Skills</h3>
+              </div>
+              <div class="skill-list">
+                <div class="skill-item-row">
+                  <i
+                    class="fa-solid fa-comments skill-tech-icon"
+                    style="color: #6366f1"
+                  ></i>
+                  <span class="skill-name">Communication Skills</span>
+                </div>
+                <div class="skill-item-row">
+                  <i
+                    class="fa-solid fa-people-group skill-tech-icon"
+                    style="color: #ec4899"
+                  ></i>
+                  <span class="skill-name">Teamwork</span>
+                </div>
+                <div class="skill-item-row">
+                  <i
+                    class="fa-solid fa-lightbulb skill-tech-icon"
+                    style="color: #eab308"
+                  ></i>
+                  <span class="skill-name">Problem Solving</span>
+                </div>
+                <div class="skill-item-row">
+                  <i
+                    class="fa-solid fa-magnifying-glass-chart skill-tech-icon"
+                    style="color: #ef4444"
+                  ></i>
+                  <span class="skill-name">Critical Thinking</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section-padding">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Project 1: Hospital Management -->
+          <div
+            class="col-lg-3 col-md-6 d-flex justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="project-card h-100">
+              <div class="project-img-wrapper">
+                <img
+                  src="assets/images/hospital.png"
+                  alt="Hospital Management System Mockup"
+                  class="project-img"
+                />
+              </div>
+              <div class="project-content p-4">
+                <h3 class="project-title mb-0">
+                  Multispeciality Hospital Management System
+                </h3>
+                <div class="project-footer-btns d-flex gap-3 mt-3 mb-3">
+                  <a
+                    href="https://github.com/MallikarjunGalatagi/Multispecality-Hosptital-Management-System"
+                    target="_blank"
+                    class="btn-git-code"
+                    ><i class="fa-brands fa-github me-2"></i>Git Repository</a
+                  >
+                  <a
+                    href="https://drive.google.com/file/d/1p81dQwHRlIZ4IB3z_T47nuYnlaEF5P23/view?usp=drive_link"
+                    target="_blank"
+                    class="btn-demo-video"
+                    ><i class="fa-solid fa-video me-2"></i>Project Demonstration</a
+                  >
+                </div>
+                <div class="project-details-collapse">
+                  <div class="tech-stack-grid mb-4 mt-3">
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                        alt="Java"
+                      /><span>Java</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://img.icons8.com/color/48/code.png"
+                        alt="JSP"
+                      /><span>JSP</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://img.icons8.com/color/48/gear.png"
+                        alt="Servlets"
+                      /><span>Servlets</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                        alt="HTML"
+                      /><span>HTML</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                        alt="CSS"
+                      /><span>CSS</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                        alt="JavaScript"
+                      /><span>JS</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                        alt="MySQL"
+                      /><span>MySQL</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://img.icons8.com/color/48/database.png"
+                        alt="JDBC"
+                      /><span>JDBC</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tomcat/tomcat-original.svg"
+                        alt="Apache Tomcat"
+                      /><span>Tomcat</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg"
+                        alt="Maven"
+                      /><span>Maven</span>
+                    </div>
+                  </div>
+                  <p class="project-desc mb-4 text-muted">
+                    Multi-module backend portal designed to coordinate hospital
+                    operations. Connects patients, doctors, and admins under a
+                    unified dashboard. Features secure appointment booking, doctor
+                    availability scheduling, and dynamic patient record tracking.
+                    Integrates a custom relational database schema to ensure high
+                    availability and data integrity.
+                  </p>
+                  <div class="project-features-list mb-0">
+                    <h4 class="features-list-title">Key Implementations:</h4>
+                    <ul class="list-unstyled ps-3 features-bullets mb-0">
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-right text-muted me-2 small"
+                        ></i>Role-based authentication
+                      </li>
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-right text-muted me-2 small"
+                        ></i>Doctor schedule plotting
+                      </li>
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-right text-muted me-2 small"
+                        ></i>Automated notifications
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <button type="button" class="btn-toggle-details" aria-expanded="false">
+                  <span class="btn-text">View Details</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Foodify -->
+          <div
+            class="col-lg-3 col-md-6 d-flex justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="project-card h-100">
+              <div class="project-img-wrapper">
+                <img
+                  src="assets/images/foodify.png"
+                  alt="Foodify System Mockup"
+                  class="project-img"
+                />
+              </div>
+              <div class="project-content p-4">
+                <h3 class="project-title mb-0">
+                  Foodify - Online Food Delivery System
+                </h3>
+                <div class="project-footer-btns d-flex gap-3 mt-3 mb-3">
+                  <a
+                    href="https://github.com/MallikarjunGalatagi/Food-Delivery-Application"
+                    target="_blank"
+                    class="btn-git-code"
+                    ><i class="fa-brands fa-github me-2"></i>Git Repository</a
+                  >
+                  <a
+                    href="https://drive.google.com/file/d/1Q3R1ix7Jb9jlIptPyTWZYmIMXn2WI2gm/view?usp=drive_link"
+                    target="_blank"
+                    class="btn-demo-video"
+                    ><i class="fa-solid fa-video me-2"></i>Project Demonstration</a
+                  >
+                </div>
+                <div class="project-details-collapse">
+                  <div class="tech-stack-grid mb-4 mt-3">
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                        alt="Java"
+                      /><span>Java</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://img.icons8.com/color/48/code.png"
+                        alt="JSP"
+                      /><span>JSP</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://img.icons8.com/color/48/gear.png"
+                        alt="Servlets"
+                      /><span>Servlets</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                        alt="HTML"
+                      /><span>HTML</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                        alt="CSS"
+                      /><span>CSS</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                        alt="JavaScript"
+                      /><span>JS</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                        alt="MySQL"
+                      /><span>MySQL</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://img.icons8.com/color/48/database.png"
+                        alt="JDBC"
+                      /><span>JDBC</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tomcat/tomcat-original.svg"
+                        alt="Apache Tomcat"
+                      /><span>Tomcat</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg"
+                        alt="Maven"
+                      /><span>Maven</span>
+                    </div>
+                  </div>
+                  <p class="project-desc mb-4 text-muted">
+                    Online food delivery platform. Integrates distinct portals for
+                    admins, restaurant owners, delivery partners, and customers.
+                    Provides interactive shopping cart manipulation, dynamic order
+                    status logging, and real-time menu management. Utilizes
+                    session management to secure distinct user roles and
+                    authentication flows.
+                  </p>
+                  <div class="project-features-list mb-0">
+                    <h4 class="features-list-title">Key Implementations:</h4>
+                    <ul class="list-unstyled ps-3 features-bullets mb-0">
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-right text-muted me-2 small"
+                        ></i>Active shopping cart
+                      </li>
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-right text-muted me-2 small"
+                        ></i>Dynamic status updates
+                      </li>
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-right text-muted me-2 small"
+                        ></i>Complex schema relationships
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <button type="button" class="btn-toggle-details" aria-expanded="false">
+                  <span class="btn-text">View Details</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Fashion Hub -->
+          <div
+            class="col-lg-3 col-md-6 d-flex justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="project-card h-100">
+              <div class="project-img-wrapper">
+                <img
+                  src="assets/images/fashion.png"
+                  alt="Fashion Hub Mockup"
+                  class="project-img"
+                />
+              </div>
+              <div class="project-content p-4">
+                <h3 class="project-title mb-0">
+                  Fashion Hub E-commerce Web Application
+                </h3>
+                <div class="project-footer-btns d-flex gap-3 mt-3 mb-3">
+                  <a
+                    href="https://github.com/MallikarjunGalatagi/FashionHub-E-commerce-website"
+                    target="_blank"
+                    class="btn-git-code"
+                    ><i class="fa-brands fa-github me-2"></i>Git Repository</a
+                  >
+                  <a
+                    href="https://drive.google.com/file/d/1m_3DrAiSWmfPhKlM_zmvHx2IPTke6vQn/view?usp=drive_link"
+                    target="_blank"
+                    class="btn-demo-video"
+                    ><i class="fa-solid fa-video me-2"></i>Project Demonstration</a
+                  >
+                </div>
+                <div class="project-details-collapse">
+                  <div class="tech-stack-grid mb-4 mt-3">
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                        alt="Java"
+                      /><span>Java</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://img.icons8.com/color/48/code.png"
+                        alt="JSP"
+                      /><span>JSP</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://img.icons8.com/color/48/gear.png"
+                        alt="Servlets"
+                      /><span>Servlets</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                        alt="HTML"
+                      /><span>HTML</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                        alt="CSS"
+                      /><span>CSS</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                        alt="JavaScript"
+                      /><span>JS</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                        alt="MySQL"
+                      /><span>MySQL</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://img.icons8.com/color/48/database.png"
+                        alt="JDBC"
+                      /><span>JDBC</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tomcat/tomcat-original.svg"
+                        alt="Apache Tomcat"
+                      /><span>Tomcat</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg"
+                        alt="Maven"
+                      /><span>Maven</span>
+                    </div>
+                  </div>
+                  <p class="project-desc mb-4 text-muted">
+                    Responsive retail shopping portal. Showcases clothing items,
+                    filterable inventories, checkout sessions, and payment forms.
+                    Implements CSS Grid and Flexbox for seamless cross-device
+                    compatibility and fluid catalog browsing. Incorporates form
+                    input validations and local persistence to track user orders
+                    throughout checkout.
+                  </p>
+                  <div class="project-features-list mb-0">
+                    <h4 class="features-list-title">Key Implementations:</h4>
+                    <ul class="list-unstyled ps-3 features-bullets mb-0">
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-right text-muted me-2 small"
+                        ></i>Highly responsive CSS grids
+                      </li>
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-right text-muted me-2 small"
+                        ></i>Order persistence
+                      </li>
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-right text-muted me-2 small"
+                        ></i>Input validations
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <button type="button" class="btn-toggle-details" aria-expanded="false">
+                  <span class="btn-text">View Details</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: User Management System -->
+          <div
+            class="col-lg-3 col-md-6 d-flex justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="project-card h-100">
+              <div class="project-img-wrapper">
+                <img
+                  src="assets/images/user_management.png"
+                  alt="User Management System Mockup"
+                  class="project-img"
+                />
+              </div>
+              <div class="project-content p-4">
+                <h3 class="project-title mb-0">User Management System</h3>
+                <div class="project-footer-btns d-flex gap-3 mt-3 mb-3">
+                  <a
+                    href="https://github.com/MallikarjunGalatagi/User-management-system"
+                    target="_blank"
+                    class="btn-git-code"
+                    ><i class="fa-brands fa-github me-2"></i>Git Repository</a
+                  >
+                  <a
+                    href="https://drive.google.com/file/d/1pChq3Jg7iYHYbMWweWD1xi0zBVQaf0XJ/view?usp=drive_link"
+                    target="_blank"
+                    class="btn-demo-video"
+                    ><i class="fa-solid fa-video me-2"></i>Project Demonstration</a
+                  >
+                </div>
+                <div class="project-details-collapse">
+                  <div class="tech-stack-grid mb-4 mt-3">
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                        alt="Java"
+                      /><span>Java</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://img.icons8.com/color/48/code.png"
+                        alt="JSP"
+                      /><span>JSP</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://img.icons8.com/color/48/gear.png"
+                        alt="Servlets"
+                      /><span>Servlets</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                        alt="HTML"
+                      /><span>HTML</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                        alt="CSS"
+                      /><span>CSS</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                        alt="JavaScript"
+                      /><span>JS</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                        alt="MySQL"
+                      /><span>MySQL</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://img.icons8.com/color/48/database.png"
+                        alt="JDBC"
+                      /><span>JDBC</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tomcat/tomcat-original.svg"
+                        alt="Apache Tomcat"
+                      /><span>Tomcat</span>
+                    </div>
+                    <div class="tech-badge-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg"
+                        alt="Maven"
+                      /><span>Maven</span>
+                    </div>
+                  </div>
+                  <p class="project-desc mb-4 text-muted">
+                    Web-based user management system designed to coordinate user
+                    registration, authentication, profiles, and logout cycles.
+                    Implements filter-based request interception to restrict
+                    unauthorized access to admin dashboards. Employs connection
+                    pooling and prepared statements to prevent SQL injection and
+                    speed up database queries.
+                  </p>
+                  <div class="project-features-list mb-0">
+                    <h4 class="features-list-title">Key Implementations:</h4>
+                    <ul class="list-unstyled ps-3 features-bullets mb-0">
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-right text-muted me-2 small"
+                        ></i>Secure registration & login validation
+                      </li>
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-right text-muted me-2 small"
+                        ></i>Profile management dashboard
+                      </li>
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-right text-muted me-2 small"
+                        ></i>Role session authorizations
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <button type="button" class="btn-toggle-details" aria-expanded="false">
+                  <span class="btn-text">View Details</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section section-padding">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <h2 class="section-title">Education Timeline</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline-wrapper position-relative">
+          <div class="timeline-line"></div>
+
+          <!-- Education Item 1 -->
+          <div
+            class="timeline-item d-flex flex-column flex-md-row justify-content-between align-items-center mb-5"
+            data-aos="fade-right"
+          >
+            <div class="timeline-card col-md-5 order-2 order-md-1 p-4">
+              <div class="timeline-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <span
+                class="education-year text-accent fw-bold mb-2 d-inline-block"
+                >2022 - 2026</span
+              >
+              <h3 class="education-degree">Bachelors of Engineering</h3>
+              <p class="education-field text-muted mb-3">
+                Artificial Intelligence and Data Science
+              </p>
+              <p class="education-college mb-2 fw-semibold">
+                KLE College of Engineering and Technology
+              </p>
+              <p class="education-university text-muted mb-3">
+                Visvesvaraya Technological University (VTU)
+              </p>
+              <div class="education-grades d-inline-block">
+                <span class="grade-badge">CGPA: 8.13</span>
+                <span class="grade-badge">Percentage: 77.32%</span>
+              </div>
+            </div>
+            <div
+              class="timeline-dot col-md-2 order-1 order-md-2 my-3 my-md-0 position-relative d-flex justify-content-center"
+            >
+              <div class="dot-inner"></div>
+            </div>
+            <div
+              class="col-md-5 order-3 timeline-spacer d-none d-md-block"
+            ></div>
+          </div>
+
+          <!-- Education Item 2 -->
+          <div
+            class="timeline-item d-flex flex-column flex-md-row justify-content-between align-items-center mb-5"
+            data-aos="fade-left"
+          >
+            <div
+              class="col-md-5 order-3 timeline-spacer d-none d-md-block"
+            ></div>
+            <div
+              class="timeline-dot col-md-2 order-1 order-md-2 my-3 my-md-0 position-relative d-flex justify-content-center"
+            >
+              <div class="dot-inner"></div>
+            </div>
+            <div class="timeline-card col-md-5 order-2 order-md-3 p-4">
+              <div class="timeline-icon">
+                <i class="fa-solid fa-school"></i>
+              </div>
+              <span
+                class="education-year text-accent fw-bold mb-2 d-inline-block"
+                >2020 - 2022</span
+              >
+              <h3 class="education-degree">Pre University Education (PUC)</h3>
+              <p class="education-field text-muted mb-3">Science stream</p>
+              <p class="education-college mb-3 fw-semibold">
+                Govt PU College Majalatti
+              </p>
+              <div class="education-grades d-inline-block">
+                <span class="grade-badge">Percentage: 75.00%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Item 3 -->
+          <div
+            class="timeline-item d-flex flex-column flex-md-row justify-content-between align-items-center mb-5"
+            data-aos="fade-right"
+          >
+            <div class="timeline-card col-md-5 order-2 order-md-1 p-4">
+              <div class="timeline-icon">
+                <i class="fa-solid fa-school-flag"></i>
+              </div>
+              <span
+                class="education-year text-accent fw-bold mb-2 d-inline-block"
+                >2019 - 2020</span
+              >
+              <h3 class="education-degree">SSLC</h3>
+              <p class="education-field text-muted mb-3">Kannada Medium</p>
+              <p class="education-college mb-3 fw-semibold">
+                SDVS’ Kannada Medium Highschool, Sankeshwar
+              </p>
+              <div class="education-grades d-inline-block">
+                <span class="grade-badge">Percentage: 88.96%</span>
+              </div>
+            </div>
+            <div
+              class="timeline-dot col-md-2 order-1 order-md-2 my-3 my-md-0 position-relative d-flex justify-content-center"
+            >
+              <div class="dot-inner"></div>
+            </div>
+            <div
+              class="col-md-5 order-3 timeline-spacer d-none d-md-block"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="connect-channels-section section-padding">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <h2 class="section-title">Tap into my expertise today</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- Connect grid channels -->
+          <div
+            class="col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="connect-grid-card">
+              <div>
+                <div class="connect-card-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <h4 class="connect-card-title">Call Channels</h4>
+                <p class="connect-card-desc">
+                  Call directly to discuss roles or query collaboration terms.
+                </p>
+              </div>
+              <a href="tel:+918792260928" class="btn-connect-grid">Call Me</a>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="connect-grid-card">
+              <div>
+                <div class="connect-card-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <h4 class="connect-card-title">Email Channels</h4>
+                <p class="connect-card-desc">
+                  Direct email inquiries mapped directly to my mail client.
+                </p>
+              </div>
+              <a
+                href="mailto:mallikarjungalatagi@gmail.com?subject=Job%20Inquiry%20-%20Java%20Full%20Stack%20Developer"
+                class="btn-connect-grid"
+                >Email Me</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="connect-grid-card">
+              <div>
+                <div class="connect-card-icon">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <h4 class="connect-card-title">Code Repositories</h4>
+                <p class="connect-card-desc">
+                  Audit the full-stack codebases on my GitHub profiles.
+                </p>
+              </div>
+              <a
+                href="https://github.com/MallikarjunGalatagi"
+                target="_blank"
+                class="btn-connect-grid"
+                >GitHub</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="connect-grid-card">
+              <div>
+                <div class="connect-card-icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <h4 class="connect-card-title">Professional Networks</h4>
+                <p class="connect-card-desc">
+                  Connect and message directly via LinkedIn.
+                </p>
+              </div>
+              <a
+                href="https://www.linkedin.com/in/mallikarjun-galatagi"
+                target="_blank"
+                class="btn-connect-grid"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom message submission form -->
+        <div class="row mt-5 justify-content-center">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="contact-form-card p-4">
+              <h3 class="connect-card-title text-start mb-4">
+                Send a direct message
+              </h3>
+              <form id="contact-form">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-group mb-3">
+                      <label for="form-name" class="form-label"
+                        >Full Name</label
+                      >
+                      <input
+                        type="text"
+                        id="form-name"
+                        class="form-control"
+                        placeholder="Your Name"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group mb-3">
+                      <label for="form-email" class="form-label"
+                        >Email Address</label
+                      >
+                      <input
+                        type="email"
+                        id="form-email"
+                        class="form-control"
+                        placeholder="example@mail.com"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group mb-3">
+                      <label for="form-subject" class="form-label"
+                        >Subject</label
+                      >
+                      <input
+                        type="text"
+                        id="form-subject"
+                        class="form-control"
+                        placeholder="Project collaboration / Hiring query"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group mb-4">
+                      <label for="form-message" class="form-label"
+                        >Message</label
+                      >
+                      <textarea
+                        id="form-message"
+                        class="form-control"
+                        rows="4"
+                        placeholder="Write your message here..."
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button
+                      type="submit"
+                      class="btn-submit-form w-100"
+                      id="submit-btn"
+                    >
+                      Send Message <i class="fa-solid fa-paper-plane ms-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer py-5 text-center text-lg-start">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-4 text-center text-lg-start">
+            <span class="footer-logo">Mallikarjun Galatagi</span>
+            <p class="footer-moto mt-2 text-muted mb-0">
+              Building robust, scalable, full-stack Java solutions from database
+              schema to interface render.
+            </p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <ul
+              class="footer-quick-links list-unstyled d-flex flex-wrap justify-content-center gap-3 mb-0"
+            >
+              <li><a href="#home" class="footer-link">Home</a></li>
+              <li><a href="#about" class="footer-link">About</a></li>
+              <li><a href="#skills" class="footer-link">Skills</a></li>
+              <li><a href="#projects" class="footer-link">Projects</a></li>
+              <li><a href="#education" class="footer-link">Education</a></li>
+              <li><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 text-center text-lg-end">
+            <div
+              class="footer-socials d-flex justify-content-center justify-content-lg-end gap-3 mb-3 mb-lg-0"
+            >
+              <a
+                href="https://github.com/MallikarjunGalatagi"
+                target="_blank"
+                class="footer-social-icon"
+                aria-label="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/mallikarjun-galatagi"
+                target="_blank"
+                class="footer-social-icon"
+                aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="mailto:mallikarjungalatagi@gmail.com?subject=Job%20Inquiry%20-%20Java%20Full%20Stack%20Developer"
+                class="footer-social-icon"
+                aria-label="Email"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer-divider my-4" />
+
+        <div class="row">
+          <div class="col text-center">
+            <p class="copyright-text text-muted mb-0">
+              &copy; <span id="current-year">2026</span> Mallikarjun Galatagi.
+              All Rights Reserved. Made for Production.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Custom Project Details Modal -->
+    <div id="project-details-modal" class="project-modal" aria-hidden="true">
+      <div class="project-modal-backdrop"></div>
+      <div class="project-modal-dialog">
+        <div class="project-modal-content">
+          <button type="button" class="project-modal-close" aria-label="Close modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div class="project-modal-body">
+            <div class="row g-0 h-100">
+              <!-- Left: Image Column -->
+              <div class="col-md-5 project-modal-img-col">
+                <img id="modal-project-img" src="" alt="Project Preview" />
+              </div>
+              <!-- Right: Content Column -->
+              <div class="col-md-7 project-modal-info-col p-4 p-lg-5">
+                <h3 id="modal-project-title" class="project-modal-title mb-3">Project Title</h3>
+                
+                <div class="project-footer-btns d-flex gap-3 mb-4">
+                  <a id="modal-project-git" href="#" target="_blank" class="btn-git-code">
+                    <i class="fa-brands fa-github me-2"></i>Git Repository
+                  </a>
+                  <a id="modal-project-demo" href="#" target="_blank" class="btn-demo-video">
+                    <i class="fa-solid fa-video me-2"></i>Project Demonstration
+                  </a>
+                </div>
+
+                <div class="mb-4">
+                  <h4 class="features-list-title mb-3">Technologies:</h4>
+                  <div id="modal-project-tech" class="tech-stack-grid">
+                    <!-- Dynamic badges here -->
+                  </div>
+                </div>
+
+                <p id="modal-project-desc" class="project-modal-desc mb-4 text-muted">
+                  Project description goes here.
+                </p>
+
+                <div id="modal-project-features" class="project-features-list">
+                  <h4 class="features-list-title">Key Implementations:</h4>
+                  <ul id="modal-project-bullets" class="list-unstyled ps-3 features-bullets mb-0">
+                    <!-- Dynamic list items here -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back To Top Button -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Vanilla Tilt.js (Optional but loaded for Tilt) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
