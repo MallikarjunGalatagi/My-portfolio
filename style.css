@@ -1759,6 +1759,12 @@ p {
     border: 1px solid #334155;
 }
 
+[data-theme="light"] .timeline-icon {
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+    border: none;
+}
+
 .education-year {
     font-size: 12px;
     font-weight: 700;
