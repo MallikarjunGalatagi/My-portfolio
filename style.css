@@ -316,8 +316,6 @@ body {
 [data-theme="light"] .btn-primary-action,
 [data-theme="light"] .btn-secondary-action,
 [data-theme="light"] .btn-submit-form,
-[data-theme="light"] .btn-git-code,
-[data-theme="light"] .btn-demo-video,
 [data-theme="light"] .btn-toggle-details,
 [data-theme="light"] .btn-connect-grid {
     background: rgba(0, 168, 45, 0.08) !important;
@@ -332,8 +330,6 @@ body {
 [data-theme="light"] .btn-primary-action:hover,
 [data-theme="light"] .btn-secondary-action:hover,
 [data-theme="light"] .btn-submit-form:hover,
-[data-theme="light"] .btn-git-code:hover,
-[data-theme="light"] .btn-demo-video:hover,
 [data-theme="light"] .btn-toggle-details:hover,
 [data-theme="light"] .btn-connect-grid:hover {
     background: var(--color-primary) !important;
