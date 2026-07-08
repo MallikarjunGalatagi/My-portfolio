@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,6 +53,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Animated Background Blobs -->
+    <div class="aurora-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
     <!-- Scroll Progress Bar -->
     <div id="scroll-progress"></div>
 
@@ -74,9 +81,9 @@
             aria-label="Toggle Theme"
           >
             <span class="theme-btn-icon"
-              ><i class="fa-solid fa-newspaper" id="theme-icon"></i
+              ><i class="fa-solid fa-moon" id="theme-icon"></i
             ></span>
-            <span class="theme-btn-text" id="theme-text">Broadsheet</span>
+            <span class="theme-btn-text" id="theme-text">Dark</span>
           </button>
 
           <!-- Hamburger Toggle -->
@@ -129,7 +136,7 @@
       class="hero-section d-flex align-items-center text-center"
     >
       <div class="container hero-container position-relative">
-        <div class="row justify-content-center min-vh-100 py-5">
+        <div class="row justify-content-center py-4 w-100">
           <div
             class="col-lg-10 col-xl-8 d-flex flex-column align-items-center justify-content-center"
             data-aos="fade-up"
@@ -274,7 +281,7 @@
     <section id="skills" class="skills-section section-padding">
       <div class="container">
         <div class="section-header text-center mb-5" data-aos="fade-up">
-          <h2 class="section-title">My Technical Skills</h2>
+          <h2 class="section-title">Skills</h2>
           <div class="title-underline"></div>
         </div>
 
@@ -531,13 +538,13 @@
                     href="https://github.com/MallikarjunGalatagi/Multispecality-Hosptital-Management-System"
                     target="_blank"
                     class="btn-git-code"
-                    ><i class="fa-brands fa-github"></i>Git Repo</a
+                    ><i class="fa-brands fa-github"></i>GitHub</a
                   >
                   <a
                     href="https://drive.google.com/file/d/1p81dQwHRlIZ4IB3z_T47nuYnlaEF5P23/view?usp=drive_link"
                     target="_blank"
                     class="btn-demo-video"
-                    ><i class="fa-solid fa-video"></i>Demonstration</a
+                    ><i class="fa-solid fa-video"></i>Watch Demo</a
                   >
                 </div>
                 <div class="project-details-collapse">
@@ -663,13 +670,13 @@
                     href="https://github.com/MallikarjunGalatagi/Food-Delivery-Application"
                     target="_blank"
                     class="btn-git-code"
-                    ><i class="fa-brands fa-github"></i>Git Repo</a
+                    ><i class="fa-brands fa-github"></i>GitHub</a
                   >
                   <a
                     href="https://drive.google.com/file/d/1Q3R1ix7Jb9jlIptPyTWZYmIMXn2WI2gm/view?usp=drive_link"
                     target="_blank"
                     class="btn-demo-video"
-                    ><i class="fa-solid fa-video"></i>Demonstration</a
+                    ><i class="fa-solid fa-video"></i>Watch Demo</a
                   >
                 </div>
                 <div class="project-details-collapse">
@@ -795,13 +802,13 @@
                     href="https://github.com/MallikarjunGalatagi/FashionHub-E-commerce-website"
                     target="_blank"
                     class="btn-git-code"
-                    ><i class="fa-brands fa-github"></i>Git Repo</a
+                    ><i class="fa-brands fa-github"></i>GitHub</a
                   >
                   <a
                     href="https://drive.google.com/file/d/1m_3DrAiSWmfPhKlM_zmvHx2IPTke6vQn/view?usp=drive_link"
                     target="_blank"
                     class="btn-demo-video"
-                    ><i class="fa-solid fa-video"></i>Demonstration</a
+                    ><i class="fa-solid fa-video"></i>Watch Demo</a
                   >
                 </div>
                 <div class="project-details-collapse">
@@ -925,13 +932,13 @@
                     href="https://github.com/MallikarjunGalatagi/User-management-system"
                     target="_blank"
                     class="btn-git-code"
-                    ><i class="fa-brands fa-github"></i>Git Repo</a
+                    ><i class="fa-brands fa-github"></i>GitHub</a
                   >
                   <a
                     href="https://drive.google.com/file/d/1pChq3Jg7iYHYbMWweWD1xi0zBVQaf0XJ/view?usp=drive_link"
                     target="_blank"
                     class="btn-demo-video"
-                    ><i class="fa-solid fa-video"></i>Demonstration</a
+                    ><i class="fa-solid fa-video"></i>Watch Demo</a
                   >
                 </div>
                 <div class="project-details-collapse">
@@ -1054,27 +1061,29 @@
             class="timeline-item d-flex flex-column flex-md-row justify-content-between align-items-center mb-5"
             data-aos="fade-right"
           >
-            <div class="timeline-card col-md-5 order-2 order-md-1 p-4">
+            <div class="timeline-card-wrapper col-md-5 order-2 order-md-1">
               <div class="timeline-icon">
                 <i class="fa-solid fa-graduation-cap"></i>
               </div>
-              <span
-                class="education-year text-accent fw-bold mb-2 d-inline-block"
-                >2022 - 2026</span
-              >
-              <h3 class="education-degree">Bachelors of Engineering</h3>
-              <p class="education-field text-muted mb-3">
-                Artificial Intelligence and Data Science
-              </p>
-              <p class="education-college mb-2 fw-semibold">
-                KLE College of Engineering and Technology
-              </p>
-              <p class="education-university text-muted mb-3">
-                Visvesvaraya Technological University (VTU)
-              </p>
-              <div class="education-grades d-inline-block">
-                <span class="grade-badge">CGPA: 8.13</span>
-                <span class="grade-badge">Percentage: 77.32%</span>
+              <div class="timeline-card p-4">
+                <span
+                  class="education-year text-accent fw-bold mb-2 d-inline-block"
+                  >2022 - 2026</span
+                >
+                <h3 class="education-degree">Bachelors of Engineering</h3>
+                <p class="education-field text-muted mb-3">
+                  Artificial Intelligence and Data Science
+                </p>
+                <p class="education-college mb-2 fw-semibold">
+                  KLE College of Engineering and Technology
+                </p>
+                <p class="education-university text-muted mb-3">
+                  Visvesvaraya Technological University (VTU)
+                </p>
+                <div class="education-grades d-inline-block">
+                  <span class="grade-badge">CGPA: 8.13</span>
+                  <span class="grade-badge">Percentage: 77.32%</span>
+                </div>
               </div>
             </div>
             <div
@@ -1100,21 +1109,23 @@
             >
               <div class="dot-inner"></div>
             </div>
-            <div class="timeline-card col-md-5 order-2 order-md-3 p-4">
+            <div class="timeline-card-wrapper col-md-5 order-2 order-md-3">
               <div class="timeline-icon">
                 <i class="fa-solid fa-school"></i>
               </div>
-              <span
-                class="education-year text-accent fw-bold mb-2 d-inline-block"
-                >2020 - 2022</span
-              >
-              <h3 class="education-degree">Pre University Education (PUC)</h3>
-              <p class="education-field text-muted mb-3">Science stream</p>
-              <p class="education-college mb-3 fw-semibold">
-                Govt PU College Majalatti
-              </p>
-              <div class="education-grades d-inline-block">
-                <span class="grade-badge">Percentage: 75.00%</span>
+              <div class="timeline-card p-4">
+                <span
+                  class="education-year text-accent fw-bold mb-2 d-inline-block"
+                  >2020 - 2022</span
+                >
+                <h3 class="education-degree">Pre University Education (PUC)</h3>
+                <p class="education-field text-muted mb-3">Science stream</p>
+                <p class="education-college mb-3 fw-semibold">
+                  Govt PU College Majalatti
+                </p>
+                <div class="education-grades d-inline-block">
+                  <span class="grade-badge">Percentage: 75.00%</span>
+                </div>
               </div>
             </div>
           </div>
@@ -1124,21 +1135,23 @@
             class="timeline-item d-flex flex-column flex-md-row justify-content-between align-items-center mb-5"
             data-aos="fade-right"
           >
-            <div class="timeline-card col-md-5 order-2 order-md-1 p-4">
+            <div class="timeline-card-wrapper col-md-5 order-2 order-md-1">
               <div class="timeline-icon">
                 <i class="fa-solid fa-school-flag"></i>
               </div>
-              <span
-                class="education-year text-accent fw-bold mb-2 d-inline-block"
-                >2019 - 2020</span
-              >
-              <h3 class="education-degree">SSLC</h3>
-              <p class="education-field text-muted mb-3">Kannada Medium</p>
-              <p class="education-college mb-3 fw-semibold">
-                SDVS’ Kannada Medium Highschool, Sankeshwar
-              </p>
-              <div class="education-grades d-inline-block">
-                <span class="grade-badge">Percentage: 88.96%</span>
+              <div class="timeline-card p-4">
+                <span
+                  class="education-year text-accent fw-bold mb-2 d-inline-block"
+                  >2019 - 2020</span
+                >
+                <h3 class="education-degree">SSLC</h3>
+                <p class="education-field text-muted mb-3">Kannada Medium</p>
+                <p class="education-college mb-3 fw-semibold">
+                  SDVS’ Kannada Medium Highschool, Sankeshwar
+                </p>
+                <div class="education-grades d-inline-block">
+                  <span class="grade-badge">Percentage: 88.96%</span>
+                </div>
               </div>
             </div>
             <div
@@ -1199,9 +1212,12 @@
                 </p>
               </div>
               <a
-                href="mailto:mallikarjungalatagi@gmail.com?subject=Job%20Inquiry%20-%20Java%20Full%20Stack%20Developer"
-                class="btn-connect-grid"
-                >Email Me</a
+                href="mailto:mallikarjungalatagi@gmail.com?subject=Regarding%20Java%20Full%20Stack%20Developer%20Opportunity&body=Hello%20Mallikarjun%2C%0A%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20Java%20Full%20Stack%20Developer%20opportunity%20with%20you.%0A%0ALooking%20forward%20to%20hearing%20from%20you.%0A%0ARegards%2C"
+                class="btn-connect-grid ripple-btn"
+                data-bs-toggle="tooltip"
+                data-bs-title="Send an Email"
+                data-bs-placement="top"
+                >Mail Me</a
               >
             </div>
           </div>
@@ -1412,21 +1428,21 @@
           <div class="project-modal-body">
             <div class="row g-0 h-100">
               <!-- Left: Image Column -->
-              <div class="col-md-7 project-modal-img-col">
+              <div class="col-md-8 project-modal-img-col">
                 <img id="modal-project-img" src="" alt="Project Preview" />
               </div>
 
               <!-- Right: Content Column -->
-              <div class="col-md-5 project-modal-info-col p-3 p-lg-4">
+              <div class="col-md-4 project-modal-info-col p-3 p-lg-4">
                 <!-- Sticky Header with Title and Action Buttons -->
                 <div class="modal-info-header mb-4 pb-3">
                   <h3 id="modal-project-title" class="project-modal-title mb-3">Project Title</h3>
                   <div class="project-footer-btns d-flex gap-3 mb-2">
                     <a id="modal-project-git" href="#" target="_blank" class="btn-git-code w-50 justify-content-center py-2 text-nowrap" style="font-size: 11px;">
-                      <i class="fa-brands fa-github me-1"></i>Git Repository
+                      <i class="fa-brands fa-github me-1"></i>GitHub
                     </a>
                     <a id="modal-project-demo" href="#" target="_blank" class="btn-demo-video w-50 justify-content-center py-2 text-nowrap" style="font-size: 11px;">
-                      <i class="fa-solid fa-video me-1"></i>Project Demonstration
+                      <i class="fa-solid fa-video me-1"></i>Watch Demo
                     </a>
                   </div>
                 </div>
@@ -1473,6 +1489,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
 
     <!-- Custom JavaScript -->
-    <script src="script.js"></script>
+    <script src="script.js?v=1.1"></script>
   </body>
 </html>

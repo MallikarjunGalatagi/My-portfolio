@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeIcon = document.getElementById('theme-icon');
     const themeText = document.getElementById('theme-text');
 
-    // Retrieve saved theme preference, default to developer 'dark'
-    const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+    // Retrieve saved theme preference, default to developer 'light'
+    const savedTheme = localStorage.getItem('portfolio-theme') || 'light';
     setTheme(savedTheme);
 
     themeToggleBtn.addEventListener('click', () => {
@@ -36,10 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (theme === 'light') {
             // Setup details for switching to Evernote Light Theme
             if (themeIcon) {
-                themeIcon.className = 'fa-solid fa-laptop-code';
+                themeIcon.className = 'fa-solid fa-moon';
             }
             if (themeText) {
-                themeText.textContent = 'Code Slate';
+                themeText.textContent = 'Dark';
             }
             if (glowElement) {
                 glowElement.style.opacity = '0';
@@ -47,10 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             // Setup details for switching to Developer Dark Theme
             if (themeIcon) {
-                themeIcon.className = 'fa-solid fa-newspaper';
+                themeIcon.className = 'fa-solid fa-sun';
             }
             if (themeText) {
-                themeText.textContent = 'Evernote';
+                themeText.textContent = 'Light';
             }
             if (glowElement) {
                 glowElement.style.opacity = 'var(--mouse-glow-opacity)';
@@ -221,24 +221,42 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Disable submit button during mock submission
+            // Disable submit button during redirect
             if (submitBtn) {
                 submitBtn.disabled = true;
                 submitBtn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin ms-2"></i>';
             }
 
-            // Simulate form submission delay
-            setTimeout(() => {
-                showNotification(`Thank you, ${name}! Your message has been sent successfully. Form is prepared for EmailJS or Formspree integration.`, 'success');
-                contactForm.reset();
+            // Construct mailto link
+            const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+            const mailtoUrl = `mailto:mallikarjungalatagi@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
+            // Copy email to clipboard as backup fallback
+            navigator.clipboard.writeText('mallikarjungalatagi@gmail.com').then(() => {
+                showNotification("Copied 'mallikarjungalatagi@gmail.com' to clipboard and launching email app!", 'success');
+            }).catch(() => {
+                showNotification("Launching email app to send message!", 'success');
+            });
+
+            // Trigger the email client via simulated link click (safest browser gesture bypass)
+            const mailLink = document.createElement('a');
+            mailLink.href = mailtoUrl;
+            document.body.appendChild(mailLink);
+            mailLink.click();
+            document.body.removeChild(mailLink);
+
+            // Reset form
+            setTimeout(() => {
+                contactForm.reset();
                 if (submitBtn) {
                     submitBtn.disabled = false;
                     submitBtn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane ms-2"></i>';
                 }
-            }, 1500);
+            }, 1000);
         });
     }
+
+
 
     // Elegant Toast/Notification System
     function showNotification(message, type = 'success') {
@@ -359,4 +377,35 @@ document.addEventListener('keydown', (e) => {
             document.body.style.overflow = '';
         }
     }
+});
+
+// Initialize Bootstrap Tooltips
+document.addEventListener('DOMContentLoaded', () => {
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    tooltipTriggerList.forEach(tooltipTriggerEl => {
+        new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+});
+
+// Ripple Click Animation Handler
+document.addEventListener('click', (e) => {
+    const button = e.target.closest('.ripple-btn');
+    if (!button) return;
+
+    const circle = document.createElement("span");
+    const diameter = Math.max(button.clientWidth, button.clientHeight);
+    const radius = diameter / 2;
+
+    const rect = button.getBoundingClientRect();
+    circle.style.width = circle.style.height = `${diameter}px`;
+    circle.style.left = `${e.clientX - rect.left - radius}px`;
+    circle.style.top = `${e.clientY - rect.top - radius}px`;
+    circle.classList.add("ripple");
+
+    const existingRipple = button.querySelector(".ripple");
+    if (existingRipple) {
+        existingRipple.remove();
+    }
+
+    button.appendChild(circle);
 });
