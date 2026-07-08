@@ -69,10 +69,10 @@
     --color-text-dark-bg: #FFFFFF; /* White text on dark sections */
     --color-tag: #00A82D;          /* Green tags */
     
-    /* Fonts Stacking (Evernote Display Serif + Sans-Serif) */
-    --font-display: 'Playfair Display', 'Georgia', serif; /* Evernote display serif */
-    --font-serif: 'Playfair Display', 'Georgia', serif;
-    --font-sans: 'Inter', sans-serif;
+    /* Fonts Stacking (Poppins matching Code Slate) */
+    --font-display: 'Poppins', sans-serif;
+    --font-serif: 'Poppins', sans-serif;
+    --font-sans: 'Poppins', sans-serif;
     
     /* Layout & Styling Attributes */
     --shadow-main: rgba(22, 25, 28, 0.04) 0px 8px 24px;
