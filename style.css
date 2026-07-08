@@ -1830,6 +1830,45 @@ p {
 }
 
 @media (max-width: 768px) {
+    /* Mobile Performance Optimizations: disable heavy GPU calculations */
+    .about-image-card,
+    .internship-card,
+    .skills-card,
+    .project-card,
+    .project-modal-dialog,
+    .timeline-card,
+    .connect-grid-card,
+    .contact-form-card {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        background: rgba(11, 15, 30, 0.95) !important; /* Premium dark background fallback */
+    }
+    
+    [data-theme="light"] .about-image-card,
+    [data-theme="light"] .internship-card,
+    [data-theme="light"] .skills-card,
+    [data-theme="light"] .project-card,
+    [data-theme="light"] .project-modal-dialog,
+    [data-theme="light"] .timeline-card,
+    [data-theme="light"] .connect-grid-card,
+    [data-theme="light"] .contact-form-card {
+        background: #FFFFFF !important;
+    }
+    
+    .blob {
+        animation: none !important;
+        filter: blur(80px) !important;
+    }
+    
+    .internship-card:hover::after,
+    .skills-card:hover::after,
+    .project-card:hover::after,
+    .timeline-card:hover::after,
+    .connect-grid-card:hover::after,
+    .contact-form-card:hover::after {
+        animation: none !important;
+    }
+
     .timeline-line {
         left: 20px;
     }
