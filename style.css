@@ -1855,9 +1855,9 @@ p {
         background: #FFFFFF !important;
     }
     
-    .blob {
-        animation: none !important;
-        filter: blur(80px) !important;
+    .aurora-blobs,
+    .mouse-glow {
+        display: none !important;
     }
     
     .internship-card:hover::after,

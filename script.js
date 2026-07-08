@@ -191,12 +191,13 @@ document.addEventListener('DOMContentLoaded', () => {
             easing: 'ease-out-cubic',
             once: true,
             mirror: false,
-            anchorPlacement: 'top-bottom'
+            anchorPlacement: 'top-bottom',
+            disable: 'mobile' // Disable animations on mobile for smoother scrolling
         });
     }
 
-    // Initialize Vanilla Tilt.js on components
-    if (typeof VanillaTilt !== 'undefined') {
+    // Initialize Vanilla Tilt.js on components (Desktop only)
+    if (typeof VanillaTilt !== 'undefined' && window.innerWidth > 768) {
         const tiltElements = document.querySelectorAll('[data-tilt]');
         VanillaTilt.init(Array.from(tiltElements));
     }
