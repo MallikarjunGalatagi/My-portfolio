@@ -1456,7 +1456,7 @@ p {
     height: auto !important;
     border-radius: 6px !important;
     padding: 10px 4px !important;
-    display: inline-flex !important;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     font-family: var(--font-sans);
