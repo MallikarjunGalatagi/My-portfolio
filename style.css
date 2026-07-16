@@ -1836,6 +1836,11 @@ p {
 }
 
 @media (max-width: 768px) {
+    /* Hide top-right 'X' modal close button on mobile viewport */
+    .project-modal-close-top {
+        display: none !important;
+    }
+
     /* Mobile Performance Optimizations: disable heavy GPU calculations */
     .about-image-card,
     .internship-card,

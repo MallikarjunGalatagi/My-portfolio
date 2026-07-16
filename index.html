@@ -1422,7 +1422,7 @@
       <div class="project-modal-backdrop"></div>
       <div class="project-modal-dialog">
         <div class="project-modal-content">
-          <button type="button" class="project-modal-close" aria-label="Close modal">
+          <button type="button" class="project-modal-close project-modal-close-top" aria-label="Close modal">
             <i class="fa-solid fa-xmark"></i>
           </button>
           <div class="project-modal-body">
@@ -1463,6 +1463,13 @@
                   <ul id="modal-project-bullets" class="list-unstyled ps-3 features-bullets mb-0">
                     <!-- Dynamic list items here -->
                   </ul>
+                </div>
+
+                <!-- Back button at the bottom of modal details -->
+                <div class="modal-back-wrapper mt-4">
+                  <button type="button" class="btn-submit-form project-modal-close w-100 justify-content-center py-2" style="font-size: 12px; font-weight: 700; text-transform: uppercase;">
+                    <i class="fa-solid fa-arrow-left me-2"></i>Back
+                  </button>
                 </div>
               </div>
             </div>
