@@ -318,6 +318,7 @@ body {
 [data-theme="light"] .btn-submit-form,
 [data-theme="light"] .btn-git-code,
 [data-theme="light"] .btn-demo-video,
+[data-theme="light"] .btn-modal-back,
 [data-theme="light"] .btn-toggle-details,
 [data-theme="light"] .btn-connect-grid {
     background: rgba(0, 168, 45, 0.08) !important;
@@ -334,6 +335,7 @@ body {
 [data-theme="light"] .btn-submit-form:hover,
 [data-theme="light"] .btn-git-code:hover,
 [data-theme="light"] .btn-demo-video:hover,
+[data-theme="light"] .btn-modal-back:hover,
 [data-theme="light"] .btn-toggle-details:hover,
 [data-theme="light"] .btn-connect-grid:hover {
     background: var(--color-primary) !important;
@@ -1209,7 +1211,8 @@ p {
 }
 
 .btn-git-code,
-.btn-demo-video {
+.btn-demo-video,
+.btn-modal-back {
     flex: 1;
     font-family: var(--font-sans);
     font-size: 11px;
@@ -1229,7 +1232,8 @@ p {
 }
 
 .btn-git-code,
-.btn-demo-video {
+.btn-demo-video,
+.btn-modal-back {
     background-color: #000000 !important;
     border: 1.5px solid #000000 !important;
     color: #FFFFFF !important;
@@ -1238,14 +1242,16 @@ p {
 }
 
 [data-theme="dark"] .btn-git-code,
-[data-theme="dark"] .btn-demo-video {
+[data-theme="dark"] .btn-demo-video,
+[data-theme="dark"] .btn-modal-back {
     background-color: #1E293B !important;
     border: 1.5px solid #334155 !important;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 8px rgba(6, 182, 212, 0.2);
 }
 
 .btn-git-code:hover,
-.btn-demo-video:hover {
+.btn-demo-video:hover,
+.btn-modal-back:hover {
     background-color: var(--color-primary) !important;
     border-color: var(--color-primary) !important;
     transform: translateY(-2px);
@@ -1253,7 +1259,8 @@ p {
 }
 
 [data-theme="dark"] .btn-git-code:hover,
-[data-theme="dark"] .btn-demo-video:hover {
+[data-theme="dark"] .btn-demo-video:hover,
+[data-theme="dark"] .btn-modal-back:hover {
     background-color: var(--color-primary) !important;
     border-color: var(--color-primary) !important;
     transform: translateY(-2px);
@@ -1442,9 +1449,19 @@ p {
     color: #FFFFFF;
 }
 
-[data-theme="dark"] .project-modal-close:hover {
-    background-color: var(--color-accent);
-    color: #0F172A;
+/* Reset floating layout for bottom back close button */
+.modal-back-wrapper .project-modal-close {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 6px !important;
+    padding: 10px 4px !important;
+    display: inline-flex !important;
+    box-shadow: none !important;
+    /* Reset close button colors so btn-modal-back properties apply */
+    background-color: transparent !important;
+    border: none !important;
+    color: inherit !important;
 }
 
 .project-modal-body {
