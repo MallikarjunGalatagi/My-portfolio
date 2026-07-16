@@ -1920,12 +1920,6 @@ p {
         margin-top: 15px !important;
         text-align: center;
     }
-    .modal-back-wrapper .project-modal-close {
-        width: 50% !important;
-        max-width: 200px;
-        margin: 0 auto !important;
-        padding: 8px 4px !important;
-    }
 
     /* Mobile Performance Optimizations: disable heavy GPU calculations */
     .about-image-card,
